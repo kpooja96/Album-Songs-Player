@@ -1,0 +1,124 @@
+<br>
+<br>
+<br>
+<div class="container">
+  <h4  style="color:rgb(46, 15, 15);text-align:center; font-size: -webkit-xxx-large">
+      Chanson
+  </h4>
+</div>
+
+<br>
+<div class="container">
+  <div class="card">
+      <div class="card-header">
+              
+      </div>
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-6 text-center">
+                  <div class="text-center">
+                  <img src="assets/images/v5.jpg"class="img-responsive"width="350px"height="110%">
+                  <br><br>
+                  
+              </div>
+          </div>
+              <div class="col-md-6">
+                  <table class="table table-bordered">
+                      <tbody>
+                          <tr>
+                              <td>Song Name</td>
+                              <td>{{song.songName}}</td>
+                              
+                          </tr>
+                          <tr>
+                                  <td>Song Title</td>
+                                  <td>{{song.title}}</td>
+                          </tr>
+                          <tr>
+                              <td>Artist</td>
+                              <td>
+                                  <span *ngFor = "let artist of song.artist">
+                                      {{artist.firstName}}{{artist.lastName}}
+                                      <br>
+                                  </span>
+
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Song Category</td>
+                              <td>{{song.category}}</td>
+                          </tr>
+                          
+                          <tr>
+                              <td>Rating</td>
+                              <td>{{song.rating}}</td>
+                              
+                          </tr>
+                          <tr>
+                              <td>Release Date</td>
+                              <td>{{song.releaseDate | date}}</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div>
+        <div class="container-audio" style="width: 31%; float: left">
+                <audio controls  loop autoplay>
+                           <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+                           Your browser dose not Support the audio Tag
+                       </audio>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br>
+            <div class="container-audio" style="float:left; margin:0%">
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <div class="colum1">
+                    <div class="row"></div>
+                </div>
+                <br>
+                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                
+            </div>
+          
+          </div>
+          <!-- {{book | json}} -->
+
+  <div class="list-group" style="margin-left:500px">
+        
+      
+        
+        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a> -->
+        <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a> -->
+      </div>
+</div>
+  
